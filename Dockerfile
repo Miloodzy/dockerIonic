@@ -9,7 +9,7 @@ RUN yum -y install nodejs git
 RUN npm version 
 RUN npm install -g cordova ionic  
 WORKDIR /project
-RUN cd /tmp ; mkdir /project ; cd /project ; ionic start myapp blank; echo n
+RUN mkdir /project ; cd /project ; ionic start myapp blank; echo n
 ADD ionic.sh /
 #RUN ./ionic.sh
 
