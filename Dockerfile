@@ -20,4 +20,4 @@ ADD ionic.sh /
 EXPOSE 8100
 CMD cd myapp && ionic serve
 
-VOLUME ["/project/myapp"] 
+ 
